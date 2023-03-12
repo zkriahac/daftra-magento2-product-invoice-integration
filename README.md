@@ -1,4 +1,6 @@
-# Mage2 Module Websoft Daftra
+# Magento2 Module Websoft Daftra
+
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.daftra.com%2Fen%2Fusers%2Flogin&psig=AOvVaw1yQDRkJZqqz9l8Dt8UCtdE&ust=1678697233751000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLjfqdSA1v0CFQAAAAAdAAAAABAE)
 
     ``websoft/module-daftra``
 
