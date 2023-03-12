@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <!-- invoice save after observer || disabled to use in cron -->
+    <!-- <event name="sales_order_invoice_save_after">
+        <observer name="websoft_daftra_invoice_save_after" instance="Websoft\Daftra\Observer\InvoiceSaveAfter"/>
+    </event> -->
+
+    <!-- shipment after observer || disabled to use in cron -->
+    <!-- <event name="sales_order_shipment_save_after">
+        <observer name="websoft_daftra_shipment_save_after" instance="Websoft\Daftra\Observer\ShipmentSaveAfter"/>
+    </event> -->
+
+    <event name="sales_order_creditmemo_load_after">
+        <observer name="websoft_daftra_get_credit_memo_totals_and_items" instance="Websoft\Daftra\Observer\CreditMemoSaveAfter" />
+    </event>
+
+</config>

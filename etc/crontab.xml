@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job name="websoft_daftra_sendorders" instance="Websoft\Daftra\Cron\SendOrders" method="execute">
+			<schedule>*/15 * * * *</schedule>
+		</job>
+		<job name="websoft_daftra_syncproducts" instance="Websoft\Daftra\Cron\syncProducts" method="execute">
+			<schedule>*/15 * * * *</schedule>
+		</job>
+	</group>
+</config>

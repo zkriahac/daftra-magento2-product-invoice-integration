@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Websoft\Daftra\Api\LogRepositoryInterface" type="Websoft\Daftra\Model\LogRepository"/>
+	<preference for="Websoft\Daftra\Api\Data\LogInterface" type="Websoft\Daftra\Model\Log"/>
+	<preference for="Websoft\Daftra\Api\Data\LogSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Websoft\Daftra\Model\ResourceModel\Log\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">websoft_daftra_log</argument>
+			<argument name="resourceModel" xsi:type="string">Websoft\Daftra\Model\ResourceModel\Log\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="websoft_daftra_log_listing_data_source" xsi:type="string">Websoft\Daftra\Model\ResourceModel\Log\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+
+	<preference for="Websoft\Daftra\Api\GuestClientRepositoryInterface" type="Websoft\Daftra\Model\GuestClientRepository"/>
+	<preference for="Websoft\Daftra\Api\Data\GuestClientInterface" type="Websoft\Daftra\Model\GuestClient"/>
+	<preference for="Websoft\Daftra\Api\Data\GuestClientSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Websoft\Daftra\Model\ResourceModel\GuestClient\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">websoft_daftra_guestclient</argument>
+			<argument name="resourceModel" xsi:type="string">Websoft\Daftra\Model\ResourceModel\GuestClient\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="websoft_daftra_guestclient_listing_data_source" xsi:type="string">Websoft\Daftra\Model\ResourceModel\GuestClient\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

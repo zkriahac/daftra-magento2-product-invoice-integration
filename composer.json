@@ -1,0 +1,22 @@
+{
+    "name": "websoft/module-daftra",
+    "description": "Daftra integration",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Zkria",
+            "email": "zkriahagmohamad@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Websoft\\Daftra\\": ""
+        }
+    }
+}

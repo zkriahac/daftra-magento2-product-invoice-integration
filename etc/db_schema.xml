@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="websoft_daftra_log" resource="default" engine="innodb" comment="websoft_daftra_log Table">
+		<column xsi:type="int" name="log_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="log_id"/>
+		</constraint>
+		<column name="method" nullable="true" xsi:type="text" comment="method"/>
+		<column name="request" nullable="true" xsi:type="text" comment="request"/>
+		<column name="response" nullable="true" xsi:type="text" comment="response"/>
+		<column name="datetime" nullable="true" xsi:type="text" comment="datetime"/>
+		<column name="relatedorder" nullable="true" xsi:type="text" comment="relatedorder"/>
+		<column name="status" nullable="true" xsi:type="text" comment="status"/>
+	</table>
+
+	<table name="sales_order">
+		<column name="invoice_id" nullable="true" xsi:type="varchar" comment="Invoice Id" length="255"/>
+		<column name="refund_id" nullable="true" xsi:type="varchar" comment="Invoice Id" length="255"/>
+	</table>
+
+	<table name="websoft_daftra_guestclient" resource="default" engine="innodb" comment="websoft_daftra_guestclient Table">
+		<column xsi:type="int" name="guestclient_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="guestclient_id"/>
+		</constraint>
+		<column name="email" nullable="true" xsi:type="text" comment="email"/>
+		<column name="clientid" nullable="true" xsi:type="text" comment="clientid"/>
+	</table>
+</schema>

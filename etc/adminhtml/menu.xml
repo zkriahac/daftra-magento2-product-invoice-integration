@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Websoft::top_level" title="Websoft" module="Websoft_Daftra" sortOrder="9999" resource="Magento_Backend::content"/>
+		<add id="Websoft_Daftra::websoft_daftra_log" title="Log" module="Websoft_Daftra" sortOrder="9999" resource="Magento_Backend::content" parent="Websoft::top_level" action="websoft_daftra/log/index"/>
+		<add id="Websoft_Daftra::websoft_daftra_guestclient" title="GuestClient" module="Websoft_Daftra" sortOrder="9999" resource="Magento_Backend::content" parent="Websoft::top_level" action="websoft_daftra/guestclient/index"/>
+	</menu>
+</config>
