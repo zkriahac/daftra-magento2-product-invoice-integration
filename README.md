@@ -62,5 +62,8 @@ Daftra integration
 
 ## Attributes
 
+ - Customer - Daftra Related ID (daftra_id)
+
+ - Product - Daftra Related Id (daftra_id)
 
 
