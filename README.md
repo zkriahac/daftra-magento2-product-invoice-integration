@@ -4,11 +4,11 @@
 
     ``websoft/module-daftra``
 
- - [Main Functionalities](#markdown-header-main-functionalities)
- - [Installation](#markdown-header-installation)
- - [Configuration](#markdown-header-configuration)
- - [Specifications](#markdown-header-specifications)
- - [Attributes](#markdown-header-attributes)
+ - [Main Functionalities](#main-functionalities)
+ - [Installation](#installation)
+ - [Configuration](#configuration)
+ - [Specifications](#specifications)
+ - [Attributes](#attributes)
 
 
 ## Main Functionalities
